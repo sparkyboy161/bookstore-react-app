@@ -12,7 +12,7 @@ class Products extends Component {
         super(props);
         this.state = {
             products: [
-                
+
             ]
         };
     }
@@ -20,12 +20,12 @@ class Products extends Component {
     componentDidMount() {
         const url = 'https://l08y0.sse.codesandbox.io/products';
         axios.get(url)
-            .then(response=> {
+            .then(response => {
                 // handle success
-               console.log(response.data);
-               this.setState({
-                   products: response.data
-               })
+                console.log(response.data);
+                this.setState({
+                    products: response.data
+                })
             })
     }
 
